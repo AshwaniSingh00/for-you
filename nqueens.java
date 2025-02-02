@@ -14,16 +14,7 @@ public class nqueens {
         String res[]=new String[pq*4];
         String ans="";
         if (tq == pq){
-        for(int i=0;i<pq;i++)
-        {
-            for (int j = 0; j < pq; j++) {
-                ans=ans+String.valueOf(visited[i][j])+" ";
-                res[i+j]=ans;
-                ans="";
-            }
-
-        }
-            System.out.println(Arrays.toString(res));
+            display(visited);
             return;
         }
         if (cc > ec) {
